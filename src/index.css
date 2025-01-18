@@ -20,3 +20,72 @@ header {
 header > img {
     width: 24px;
 }
+
+.card {
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+    padding-left: 50px;
+    gap: 20px;
+}
+
+.card > .location_img {
+    height: 190px;
+    width: 140px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info > .location_and_heading,
+.info > .date_and_description {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.info > .location_and_heading > .location {
+    display: flex;
+    align-items: center;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.info > .location_and_heading > .location > img {
+    height: 14px;
+    margin-right: 5px;
+}
+
+.info > .location_and_heading > .location > span {
+    letter-spacing: 2px;
+    margin-right: 14px;
+} 
+
+.info > .location_and_heading > .location > a {
+    text-decoration: underline;
+    color: rgb(155, 155, 155);
+    font-size: 12px;
+}
+
+.info > .date_and_description {
+    letter-spacing: 0.20px;
+    line-height: 20px;
+    max-width: 450px;
+}
+
+.info > .date_and_description > .date {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.info > .date_and_description > .description {
+    color: rgb(44, 44, 44);
+    font-size: 0.9rem;
+}
