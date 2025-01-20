@@ -5,7 +5,7 @@ import data from "./data";
 const entryComponent = data.map((place) => {
     return (
         <Entry
-            id={place.id}
+            key={place.id}
             img={place.img}
             title={place.title}
             country={place.country}
