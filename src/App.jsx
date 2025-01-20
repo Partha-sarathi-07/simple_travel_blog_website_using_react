@@ -1,13 +1,27 @@
-import Header from './components/Header'
-import Entry from './components/Entry';
+import Header from "./components/Header";
+import Entry from "./components/Entry";
+import data from "./data";
 
+const entryComponent = data.map((place) => {
+    return (
+        <Entry
+            id={place.id}
+            img={place.img}
+            title={place.title}
+            country={place.country}
+            googleMapsLink={place.googleMapsLink}
+            dates={place.dates}
+            text={place.text}
+        />
+    );
+});
 function App() {
     return (
-        <>
+        <main>
             <Header />
-            <Entry />
-        </>
-    )
+            {entryComponent}
+        </main>
+    );
 }
 
 export default App;

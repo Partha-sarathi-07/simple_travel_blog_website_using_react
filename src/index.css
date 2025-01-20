@@ -5,6 +5,9 @@
     font-family: "Inter", serif;
 }
 
+main {
+    padding-bottom: 50px;
+}
 header {
     display: flex;
     background-color: #f55a5a;
@@ -74,18 +77,19 @@ header > img {
 }
 
 .info > .date_and_description {
-    letter-spacing: 0.20px;
     line-height: 20px;
     max-width: 450px;
 }
 
 .info > .date_and_description > .date {
-    font-size: 15px;
-    font-weight: 700;
+    font-size: 18px;
+    font-weight: 600;
     margin-bottom: 10px;
+    letter-spacing: 0px;
 }
 
 .info > .date_and_description > .description {
+    letter-spacing: 0.20px;
     color: rgb(44, 44, 44);
     font-size: 0.9rem;
 }
